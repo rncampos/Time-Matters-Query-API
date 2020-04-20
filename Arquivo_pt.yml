@@ -1,0 +1,16 @@
+---
+tags:
+  - Time-Matters-Query Arquivo_pt methods
+consumes:
+  - multipart/form-data
+parameters:
+  - name: query
+    in: query
+    type: string
+    description:
+
+responses:
+  500:
+    description: "Something went wrong"
+  200:
+    description: "Successfully got info"

@@ -1,0 +1,12 @@
+flask
+numpy
+nltk
+pandas
+regex
+lxml
+gunicorn
+setuptools
+flasgger
+flask_cors
+
+git+https://github.com/JMendes1995/Time-Matters-Query.git
