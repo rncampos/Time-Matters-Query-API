@@ -1,22 +1,18 @@
 This endpoint gets time-matters-query documents from arquivo.pt
 ---
 tags:
-  - Time-Matters-Query Arquivo_pt method
+  - Time-Matters-Query Arquivo_pt url method
 parameters:
-  - name: query
+  - name: url
     in: formData
     type: string
     required: true
-    description: insert query
+    description: insert url
   - name: max_items
     in: formData
     type: integer
     description: max size of ngram
     default: 50
-  - name: domains
-    in: formData
-    type: string
-    description: insert domains to search (eg. www.jn.pt,www.publico.pt)
   - name: beginDate
     in: formData
     type: string
@@ -30,10 +26,6 @@ parameters:
   - name: title
     in: formData
     type: boolean
-    default: "false"
-  - name: snippet
-    in: formData
-    type: boolean
     default: "true"
   - name: fullContent
     in: formData
@@ -43,9 +35,6 @@ parameters:
     in: formData
     type: boolean
     default: "false"
-  - name: link
-    in: formData
-    type: string
 responses:
   500:
     description: "Something went wrong"
