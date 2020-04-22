@@ -7,12 +7,11 @@ from Time_Matters_Query import ArquivoPT, ArquivoPT_url
 
 def main():
     """The main function for this script."""
-    app.run(host='127.0.0.1', port='5000', debug=True)
+    app.run(host='0.0.0.0', port='443', debug=True)
     CORS(app)
 
 
 app = Flask(__name__)
-SCRIPT_NAME = "/timematters"
 app.config['JSON_SORT_KEYS'] = False
 
 app.config['SWAGGER'] = {
@@ -48,7 +47,6 @@ app.config['SWAGGER'] = {
     ],
     "static_url_path": "/flasgger_static",
     # "static_folder": "static",  # must be set by user
-    #"basePath": SCRIPT_NAME,
     "swagger_ui": True,
     "specs_route": "/apidocs/"
 }
