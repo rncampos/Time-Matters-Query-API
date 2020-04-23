@@ -9,4 +9,4 @@ setuptools
 flasgger
 flask_cors
 
-git+https://github.com/JMendes1995/Time-Matters-Query.git
+git+https://github.com/LIAAD/time-matters-query.git
